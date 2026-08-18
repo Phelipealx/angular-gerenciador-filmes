@@ -64,5 +64,11 @@
     "name": "Phelipe Magalhães",
     "email": "phelipe@teste.com",
     "password": "12345"
+  },
+  {
+    "id": 1786656720152,
+    "name": "Phelipe Magalhães",
+    "email": "phelipe2@teste.com",
+    "password": "12345678"
   }
 ]
