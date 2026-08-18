@@ -70,5 +70,17 @@
     "name": "Phelipe Magalhães",
     "email": "phelipe2@teste.com",
     "password": "12345678"
+  },
+  {
+    "id": 1787082755424,
+    "name": "teste",
+    "email": "testinho@123.com",
+    "password": "12345678"
+  },
+  {
+    "id": 1787083734779,
+    "name": "abc",
+    "email": "abc@123",
+    "password": "12345678"
   }
 ]

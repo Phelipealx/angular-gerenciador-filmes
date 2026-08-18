@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { tap } from 'rxjs';
 import { IUserLoginSuccessResponse } from '../../shared/models/user-login-success-response';
+import { IUserRegisterSuccessResponse } from '../../shared/models/user-register-success-response';
 import { IUserTokenSuccessAuthResponse } from '../../shared/models/user-token-success-auth-response';
 import { UserTokenStore } from './user-token-store';
 
@@ -26,5 +27,13 @@ export class UserApi {
           this._userTokenStore.saveToken(loginResponse.token);
         }),
       );
+  }
+
+  register(name: string, email: string, password: string) {
+    return this._httpClient.post<IUserRegisterSuccessResponse>('http://localhost:3000/users', {
+      name,
+      email,
+      password,
+    });
   }
 }
